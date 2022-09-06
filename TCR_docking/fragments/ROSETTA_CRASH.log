@@ -1,0 +1,42 @@
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2021.16+release.8ee4f02
+[COMMIT_DATE]: 2021-04-20T20:57:38.289184
+[APPLICATION]: UNKNOWN APPLICATION
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "5.2.0"
+[STDLIB]: libstdc++ version 20150716
+[START_OPTIONS]
+NO OPTIONS SPECIFIED
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/dors/meilerlab/apps/rosetta/rosetta-3.13/main/source/build/src/release/linux/3.10/64/x86/gcc/5.2/default/libutility.so(backtrace_string[abi:cxx11](int)+0x43) [0x2b03e5039513]
+/dors/meilerlab/apps/rosetta/rosetta-3.13/main/source/build/src/release/linux/3.10/64/x86/gcc/5.2/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xdf) [0x2b03e5038bcf]
+/dors/meilerlab/apps/rosetta/rosetta-3.13/main/source/build/src/release/linux/3.10/64/x86/gcc/5.2/default/libutility.so(utility::options::OptionCollection::load_options_from_file_exception(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x225) [0x2b03e4f81235]
+/dors/meilerlab/apps/rosetta/rosetta-3.13/main/source/build/src/release/linux/3.10/64/x86/gcc/5.2/default/libutility.so(utility::options::OptionCollection::load(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::list<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, bool)+0x4a9) [0x2b03e4f81809]
+/dors/meilerlab/apps/rosetta/rosetta-3.13/main/source/build/src/release/linux/3.10/64/x86/gcc/5.2/default/libutility.so(utility::options::OptionCollection::load(int, char* const*, bool)+0x19f) [0x2b03e4f8214f]
+/dors/meilerlab/apps/rosetta/rosetta-3.13/main/source/build/src/release/linux/3.10/64/x86/gcc/5.2/default/libcore.6.so(core::init::init_options(int, char**)+0x1f) [0x2b03df43656f]
+/dors/meilerlab/apps/rosetta/rosetta-3.13/main/source/build/src/release/linux/3.10/64/x86/gcc/5.2/default/libcore.6.so(core::init::init(int, char**)+0x29) [0x2b03df43abd9]
+/dors/meilerlab/apps/rosetta/rosetta-3.13/main/source/bin/FlexPepDocking.linuxgccrelease() [0x402aed]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x2b03e8032555]
+/dors/meilerlab/apps/rosetta/rosetta-3.13/main/source/bin/FlexPepDocking.linuxgccrelease() [0x402fa8]
+
+[END_BACKTRACE]
+
+[FILE]: src/utility/options/OptionCollection.cc
+[LINE]: 573
+[START_MESSAGE]
+Option file open failed for: 'flexpepdock_5m02.options'
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
