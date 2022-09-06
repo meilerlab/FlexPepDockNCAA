@@ -6,9 +6,10 @@ The following data and code are included in this repository:
 Includes all necessary starting data to re-capitulate the results reported in the manuscript crossdocking benchmarks including constraint files, fragment files, options files, and starting models. 
 
 ## TCR docking
-Rosetta silent files generated in the docking of G69Q and 5M02 to H-2Db with a TCR present
+Rosetta PDB files generated in the docking of G69Q and 5M02 to H-2Db with a TCR present for the top 5 scoring models, as well as input structures, fragment files, and constraints.
+
 ## HLA-A02:01 Crossdock
-Rosetta silent files generated in the crossdocking benchmark study of HLA-A*02:01 peptides for both ab-initio and refinement.
+Rosetta PDB files generated in the crossdocking benchmark study of HLA-A*02:01 peptides for both ab-initio and refinement (top 10 structures by score for each peptide/receptor pair as reported in the manuscript)
 
 ## Phosphopeptides
-Rosetta silent files generated in the benchmark docking study of HLA-A*02:01 bound phosphopeptides
+Rosetta PDB files generated in the benchmark docking study of HLA-A*02:01 bound phosphopeptides for the top 5 scoring models for each posphopeptide/receptor pair.
